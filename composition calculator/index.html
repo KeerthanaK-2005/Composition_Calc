@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="icon" href="KSREI.jpeg">
+</head>
+<body>
+    <div class="box">
+        <h1 style="font-family:cursive;">BITUMINOUS CONCRETE QUANTITY CALCULATIONS</h1><br>
+       <p>Calculate the proportioning of bituminous concrete by using job mix formula by Marshall Stability method<br> 
+            Data as per guidance of Highway Research board, bulletin 105, bituminous paving mixtures fundamentals for design as follows:</p>
+           <div class="list"><ol style="font-family:cursive;"><li>Bitumen- 4 to 9% IS 73:2013 (Paving Bitumen — Specification)</li>
+            <li>Filler-3 to 8% I.S. 3812 (Part I)-1969</li>
+            <li>Fine Aggregate -15 to 40% IS.: 383-1970</li>
+            <li>Coarse Aggregate -45 to 80%</li>
+            <li>Waste Plastic as per IRC: SP:98-2013 -6 to 8%</li></ol>
+            <img src="https://th.bing.com/th/id/OIP.5F_eIWariZCpFCpyLim1iwHaFE?rs=1&pid=ImgDetMain" style="width:300px;">
+            </div>
+</div>
+<div class="whole">
+    <div class="container1">
+      <h2>BITUMINOUS CONCRETE MIX CALCULATOR</h2>
+      <label for="bitumen">Choose the percentage of Bitumen :</label>
+      <br><select id="bitumen" name="bitumen" style="border: 0px solid #00000070;">
+        <option>Select the percentage</option>
+        <option value="4">4%</option>
+        <option value="4.5">4.5%</option>
+        <option value="5">5%</option>
+        <option value="5.5">5.5%</option>
+        <option value="6">6%</option>
+        <option value="6.5">6.5%</option>
+        <option value="7">7%</option>
+        <option value="7.5">7.5%</option>
+        <option value="8">8%</option>
+      </select>
+      <br>
+      <button class ="calculate" style="color: #000000c4;background-color:#bead97;">CALCULATE THE COMPOSITION</button>
+      <br>
+      <div id="result"></div>
+      <br>
+        <div class="table">
+        <!-- Define the table -->
+        <table style="color: #000000bb;border-radius: 5px;">
+        <!-- Table header -->
+        <thead>
+          <tr>
+            <th>Material</th>
+            <th>Percentage</th>
+            <th>Weight(gm)</th>
+          </tr>
+        </thead>
+        <!-- Table body -->
+        <tbody>
+        </tbody>
+        </table>
+      </div>
+      <button class ="download" style=" margin: 10px auto;display: none;color: #000000c4;background-color:#bead97;">DOWNLOAD</button>
+      <script src="sc.js"></script>
+    </div>
+    <div class="container2">
+      <h2>MASS CALCULATION</h2>
+      <label for="diameter">Enter the diameter of the mould (mm):</label><input type="number" id="diameter" name="diameter" min="0" step="any" style="border: 0px solid #00000070;background-color: #97939baf;">
+      <br>
+      <label for="height">Enter the height of the mould (mm):</label>
+      <input type="number" id="height" name="height" min="0" step="any"  style="border: 0px solid #00000070;background-color: #97939baf;">
+      <br>
+      <label for="density">Enter the density of the material (kg/m³):</label>
+      <input type="number" id="density" name="density" min="0" step="any"  style="border: 0px solid #00000070;background-color: #97939baf;">
+      <br>
+      <button id="calculate1"style="align-items:Center;color: #000000c4;background-color:#bead97;">CALCULATE MASS</button>
+      <br>
+      <p id="result1"></p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Add a click event listener to the button
+            document.getElementById("calculate1").addEventListener("click", function() {
+                var diameter, height, volume, density, mass;
+                const π = 22/7;
+    
+                diameter = (parseFloat(document.getElementById('diameter').value) / 1000).toFixed(4);
+                height = (parseFloat(document.getElementById('height').value) / 1000).toFixed(4);
+                density = parseFloat(document.getElementById('density').value);
+                volume = ((π / 4) * (diameter ** 2) * height).toFixed(7);
+                mass = density * volume;
+    
+                var dispresult = 'Volume of the mould: ' + volume + ' cubic meters\n' + 'Mass of the mould: ' + mass + ' kg';
+    
+                // Displaying the result in HTML paragraph
+                document.getElementById('result1').innerHTML = dispresult;
+    
+                console.log("Mass calculation successfully completed");
+            });
+        });
+    </script>
+  </div>
+  
+  </div>
+  <div class="by" style="display: flex; flex:1;text-align: center;padding:50px;">
+  <div class="division"style="height: auto;padding:40px;width:50%;list-style-type: none;color:#ffffffce;">
+ <h1>IDEA BY:</h1><UL style="list-style-type: none;">
+        <LI>Mr.S.ELANGO</LI>
+        <li>Dr.S.SENTHILKUMAR</li>
+    </UL>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="division"style="height: auto;padding:40px;width:50%;list-style-type: none; color:#ffffffce; ">
+    <h1>DEVELOPED BY:</h1><UL style="list-style-type: none;" >
+        <LI>Mrs.M.K.NIVOTHINI</Mrs></LI>
+        <li>Ms.R.KEERTHANA</li>
+    </UL>
+    </div>
+    <div class="vertical-line"></div>
+    <div class="division"style="height: auto;padding:40px;width:50%;list-style-type: none; color:#ffffffce; ">
+      <h1>KEY DEVELOPERS:</h1><UL style="list-style-type: none;" >
+          <LI>AKASH M G</LI>
+          <li>ABIRAMI D</li>
+      </UL>
+    </div>
+  </div>
+<style>
+  h1,h2{
+    align-items: center;
+  background: linear-gradient(45deg, #b6a99c 0%, #a8bbc0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .vertical-line {
+  width: 3px;
+  height: 200px;
+  background-color: rgb(196, 195, 195);
+  display: inline-block;
+  margin: 0 10px;
+}
+.list{
+  flex:1;
+  display: flex;
+  justify-content: space-between;
+}
+
+    body{
+      background-color: #97939b;
+      background-image: url("https://c4.wallpaperflare.com/wallpaper/231/919/733/digital-art-minimalism-simple-triangle-diamonds-geometry-lines-wallpaper-preview.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: cursive;
+       }
+        .box{
+            border-radius: 10px;
+            width:70%;
+            height: 90%;
+            padding:30px;
+            text-align: center;
+            margin:auto;
+            background-color:  #0c0b0b7e;
+            backdrop-filter: blur(15px) saturate(90%);
+    -webkit-backdrop-filter: blur(15px) saturate(90%);
+            margin-top: 50px;
+            color:#ffffff;
+            border:10px;
+            transition-property: height 0.3s ease;
+            box-shadow: 20px 20px  20px rgba(0, 0, 0, 0.5); 
+            
+          }
+          .box ol{
+            list-style: circle;
+            text-align: left;
+            opacity: 70%;
+            
+          }
+        button{
+            width:350px;
+            height:auto;
+            border-radius:5px;
+            padding:10px;
+            border:none;
+            font-size: larger;
+            margin-top: 30px;
+            
+                     
+           }
+        p{
+            width:100%;
+            height: 50%;
+            padding:20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+            line-height:30px;  
+            display: inline;
+            size: 10px;
+            font-size: larger;
+            text-align: center;
+            opacity: 70%;
+            }
+
+.whole
+{
+  text-align: center;
+  height:auto;
+  width: 90%;
+  background-color: #97939b;
+      background-image: url("https://c4.wallpaperflare.com/wallpaper/231/919/733/digital-art-minimalism-simple-triangle-diamonds-geometry-lines-wallpaper-preview.jpg");
+      background-attachment: fixed;
+      background-size:cover;
+  border-radius:10px;
+  font-size:large;
+  margin:50px;
+  display:flex;
+}
+
+.container1,.container2 
+{
+   /* Limit container width for better readability */
+  padding: 20px;
+  background-color:  #0c0b0b7e;
+  backdrop-filter: blur(15px) saturate(90%);
+  -webkit-backdrop-filter: blur(15px) saturate(90%);
+  border-radius:10px; 
+  margin:50px;
+  color: #ffffffb4;
+  align-items: center;
+  overflow-y: auto; 
+  transition: height 0.5s;
+  box-shadow: 20px 20px  20px rgba(0, 0, 0, 0.5); 
+  }
+select{
+  opacity: 50%;
+
+}
+
+button {
+  width:350px;          
+  height:auto;
+  border-radius:10px;
+  padding:10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border:none;
+  background-color: #228caa;
+  color:#97939b;
+  margin:10px;
+  font-size: large;
+}
+button:hover 
+{
+  background-color: #fdfcfdbe;
+  box-shadow: inset;
+  color:#000000;
+}
+select,input
+{
+  block-size: 40px;
+  padding:10px;
+  border-radius:7.5px;
+  font-weight: 100;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f7f3f3;
+  text-size-adjust: 30px;
+  width: 65%;
+  box-sizing: border-box;
+  display:inline-block;
+  margin: 10px;
+  color: #000000;
+}
+
+label
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 65%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-indent: 30px;
+  display: inline;
+  height:100px;
+
+}
+.result{
+  margin: 50px auto; /* Center the container horizontally */
+  padding: 60px;
+  border-radius: 10px;
+  background-color:#b6afa9; /* Set a white background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: block;
+  }
+header{
+  left:10px;
+  display: inline;
+  border:30%;
+  padding:10px;
+  width:60%;
+  color:#000000;
+}
+
+/* CSS Changes */
+/* Hide the table by default */
+.table {
+  display: none;
+  border-radius: 5px;
+}
+
+/* Style the table */
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the table header */
+.table th {
+  background-color: #d1d0d0ad;
+  border: 1px solid #cec8c8b7;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style the table cells */
+.table td {
+  border: 1px solid #a09a9aea;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style alternate row colors */
+.table tr:nth-child(even) {
+  background-color: #f9f9f9a1;
+}
+.by {
+  display: flex;
+  align-items: center;
+}
+.division {
+  flex: 1;
+  height: 200px;
+  background-color:  #0c0b0b7e;
+  backdrop-filter: blur(15px) saturate(90%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  border-radius: 5px;
+  box-shadow: 20px 20px  20px rgba(0, 0, 0, 0.5); 
+}
+tr{
+  background-color: #97939bda;
+}
+</style>
+</body>
+</html>
