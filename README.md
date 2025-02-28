@@ -1,21 +1,5 @@
-# Project Title
-Mixture Calculation Web App
-
-## Description
+# Composition Calculator
 This project is a web-based calculator for determining the mixture composition of materials such as bitumen, plastic, coarse aggregate, filler, and fine aggregate. It provides a dynamic calculation based on user input and displays the results in a table. Users can also download the calculated data as an Excel file.
-
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Configuration](#configuration)
-- [Data Standards](#data-standards)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-- [Authors & Acknowledgements](#authors--acknowledgements)
-- [Support](#support)
-- [Contact](#contact)
 
 ## Installation
 1. Clone the repository:
