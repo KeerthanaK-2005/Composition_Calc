@@ -80,12 +80,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Akash 😉](https://github.com/Akash-2176)
 - [Abirami D](https://github.com/Abiingit)
   
-- Special thanks to open-source libraries such as `XLSX.js` for Excel file generation.
+###Special thanks to open-source libraries such as `XLSX.js` for Excel file generation.
 
 ## Contact
 - **Email:** abiramimani2004@gmail.com
 - **GitHub:** [ABIRAMI D](https://github.com/Abiingit)
-- **LinkedIn:** [Abirami Deivasigamani]([https://linkedin.com/in/your-profile](http://www.linkedin.com/in/abirami-deivasigamani2004))
+- **LinkedIn:** [Abirami Deivasigamani](http://www.linkedin.com/in/abirami-deivasigamani2004)
 
 ---
 Thank you for using the Mixture Calculation Web App!
