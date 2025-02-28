@@ -39,11 +39,13 @@ This project is a web-based calculator for determining the mixture composition o
 - The script dynamically updates the table based on user input.
 
 ## Data Standards
--Bitumen: 4–9% (IS 73:2013).
--Filler: 3–8% (I.S. 3812 (Part I)-1969).
--Fine Aggregate: 15–40% (IS: 383-1970).
--Coarse Aggregate: 45–80%.
--Waste Plastic: 6–8% (IRC: SP:98-2013).
+This app adheres to the following standards for material proportions:
+- *Bitumen*: 4–9% (IS 73:2013).
+- *Filler*: 3–8% (I.S. 3812 (Part I)-1969).
+- *Fine Aggregate*: 15–40% (IS: 383-1970).
+- *Coarse Aggregate*: 45–80%.
+- *Waste Plastic*: 6–8% (IRC: SP:98-2013).
+
 
 ## Screenshots
 <img src="src/comp-cal-1.png">
