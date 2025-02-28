@@ -40,6 +40,14 @@ This project is a web-based calculator for determining the mixture composition o
 - Provides an option to download the results as an Excel file.
 - User-friendly interface with real-time updates.
 
+## Technologies Used
+- *HTML*: Structure the web app.
+- *CSS*: Style the user interface.
+- *JavaScript*: Handle calculations and dynamic content.
+- *Libraries*:
+  - [XLSX.js](https://github.com/SheetJS/sheetjs) for generating Excel files.
+  - [FileSaver.js](https://github.com/eligrey/FileSaver.js/) for downloading files.
+
 ## Configuration
 - The default weight is set to **1200 grams**.
 - Plastic percentage is fixed at **10%**.
@@ -79,8 +87,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Key Developers:
 - [Akash 😉](https://github.com/Akash-2176)
 - [Abirami D](https://github.com/Abiingit)
-  
-### Special thanks to open-source libraries such as `XLSX.js` for Excel file generation.
 
 ## Contact
 - **Email:** abiramimani2004@gmail.com
