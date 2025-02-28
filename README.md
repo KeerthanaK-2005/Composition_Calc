@@ -80,7 +80,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Akash 😉](https://github.com/Akash-2176)
 - [Abirami D](https://github.com/Abiingit)
   
-###Special thanks to open-source libraries such as `XLSX.js` for Excel file generation.
+### Special thanks to open-source libraries such as `XLSX.js` for Excel file generation.
 
 ## Contact
 - **Email:** abiramimani2004@gmail.com
