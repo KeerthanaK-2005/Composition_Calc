@@ -46,9 +46,9 @@ This project is a web-based calculator for determining the mixture composition o
 -Waste Plastic: 6–8% (IRC: SP:98-2013).
 
 ## Screenshots
-<img src="src/Comp-cal-1.PNG">
-<img src="src/Comp-cal-2.PNG">
-<img src="src/Comp-cal-3.PNG">
+<img src="src/comp-cal-1.png">
+<img src="src/comp-cal-2.png">
+<img src="src/comp-cal-3.png">
 
 ## Contributing
 Contributions are welcome! To contribute:
