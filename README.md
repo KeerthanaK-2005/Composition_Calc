@@ -9,11 +9,13 @@ This project is a web-based calculator for determining the mixture composition o
 - [Usage](#usage)
 - [Features](#features)
 - [Configuration](#configuration)
+- [Data Standards](#data-standards)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 - [License](#license)
 - [Authors & Acknowledgements](#authors--acknowledgements)
 - [Support](#support)
+- [Contact](#contact)
 
 ## Installation
 1. Clone the repository:
@@ -44,8 +46,17 @@ This project is a web-based calculator for determining the mixture composition o
 - The filler percentage values range from **2% to 12%**.
 - The script dynamically updates the table based on user input.
 
-## Screenshots
-*Include screenshots of the application here.*
+## Data Standards
+-Bitumen: 4–9% (IS 73:2013).
+-Filler: 3–8% (I.S. 3812 (Part I)-1969).
+-Fine Aggregate: 15–40% (IS: 383-1970).
+-Coarse Aggregate: 45–80%.
+-Waste Plastic: 6–8% (IRC: SP:98-2013).
+
+## 📊 Screenshots
+<img src="src/Comp-cal-1.PNG">
+<img src="src/Comp-cal-2.PNG">
+<img src="src/Comp-cal-3.PNG">
 
 ## Contributing
 Contributions are welcome! To contribute:
@@ -59,11 +70,22 @@ Contributions are welcome! To contribute:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Authors & Acknowledgements
-- **Your Name** - Creator & Developer
+### Idea By:
+- Mr. S. Elango
+- Dr. S. Senthilkumar
+### Developed By:
+- Mrs. M.K. Nivothini
+- Ms. R. Keerthana
+### Key Developers:
+- [Akash 😉](https://github.com/Akash-2176)
+- [Abirami D](https://github.com/Abiingit)
+  
 - Special thanks to open-source libraries such as `XLSX.js` for Excel file generation.
 
-## Support
-If you have any issues or questions, feel free to open an issue in the repository or contact the author directly.
+## Contact
+- **Email:** abiramimani2004@gmail.com
+- **GitHub:** [ABIRAMI D](https://github.com/Abiingit)
+- **LinkedIn:** [Abirami Deivasigamani]([https://linkedin.com/in/your-profile](http://www.linkedin.com/in/abirami-deivasigamani2004))
 
 ---
 Thank you for using the Mixture Calculation Web App!
