@@ -45,7 +45,7 @@ This project is a web-based calculator for determining the mixture composition o
 -Coarse Aggregate: 45–80%.
 -Waste Plastic: 6–8% (IRC: SP:98-2013).
 
-## 📊 Screenshots
+## Screenshots
 <img src="src/Comp-cal-1.PNG">
 <img src="src/Comp-cal-2.PNG">
 <img src="src/Comp-cal-3.PNG">
