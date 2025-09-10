@@ -1,84 +1,32 @@
-# Composition Calculator
-This project is a web-based calculator for determining the mixture composition of materials such as bitumen, plastic, coarse aggregate, filler, and fine aggregate. It provides a dynamic calculation based on user input and displays the results in a table. Users can also download the calculated data as an Excel file.
+Bituminous Concrete Mix Calculator
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/mixture-calculator.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd mixture-calculator
-   ```
-3. Open `index.html` in a web browser.
+Overview:
+I developed this web-based calculator to simplify the process of calculating bituminous concrete mix proportions for civil engineering projects. Using the Marshall Stability method, my application determines the correct quantities of Bitumen, Filler, Fine Aggregate, Coarse Aggregate, and Waste Plastic for a given mix.
 
-## Usage
-1. Enter the required values for bitumen percentage.
-2. Click on the **Calculate** button to compute the mixture composition.
-3. The calculated values will be displayed in a table format.
-4. Click on the **Download** button to save the results as an Excel file.
+What I Built:
 
-## Features
-- Calculates bitumen, plastic, coarse aggregate, filler, and fine aggregate percentages.
-- Displays results dynamically in a table.
-- Provides an option to download the results as an Excel file.
-- User-friendly interface with real-time updates.
+* **Composition Calculator:** I created a feature where users can select the bitumen percentage, and the app calculates the exact material proportions automatically.
+* **Mass Calculator:** I implemented functionality to calculate the volume and mass of a mould, given its diameter, height, and material density.
+* **Excel Export:** I integrated XLSX.js and FileSaver.js so users can download the calculated results as an Excel sheet.
+* **Responsive and Modern UI:** I designed the interface using CSS with gradients, shadows, and blur effects to make it visually appealing and user-friendly.
 
-## Technologies Used
-- *HTML*: Structure the web app.
-- *CSS*: Style the user interface.
-- *JavaScript*: Handle calculations and dynamic content.
-- *Libraries*:
-  - [XLSX.js](https://github.com/SheetJS/sheetjs) for generating Excel files.
-  - [FileSaver.js](https://github.com/eligrey/FileSaver.js/) for downloading files.
+How It Works:
 
-## Configuration
-- The default weight is set to **1200 grams**.
-- Plastic percentage is fixed at **10%**.
-- The filler percentage values range from **2% to 12%**.
-- The script dynamically updates the table based on user input.
+1. Users select the desired bitumen percentage from the dropdown.
+2. Clicking “Calculate the Composition” displays material weights in a table.
+3. Entering the mould diameter, height, and density computes the mass.
+4. Users can download the results as an Excel file for easy record-keeping.
 
-## Data Standards
-This app adheres to the following standards for material proportions:
-- *Bitumen*: 4–9% (IS 73:2013).
-- *Filler*: 3–8% (I.S. 3812 (Part I)-1969).
-- *Fine Aggregate*: 15–40% (IS: 383-1970).
-- *Coarse Aggregate*: 45–80%.
-- *Waste Plastic*: 6–8% (IRC: SP:98-2013).
+Technologies I Used:
 
+* HTML, CSS, JavaScript
+* Libraries: XLSX.js, FileSaver.js
 
-## Screenshots
-<img src="src/comp-cal-1.png">
-<img src="src/comp-cal-2.png">
-<img src="src/comp-cal-3.png">
+Challenges I Solved:
 
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push to the branch (`git push origin feature-name`).
-5. Open a Pull Request.
+* Made calculations dynamic and responsive based on user input.
+* Implemented Excel export functionality purely in JavaScript.
+* Designed a user-friendly interface for technical users.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Authors & Acknowledgements
-### Idea By:
-- Mr. S. Elango
-- Dr. S. Senthilkumar
-### Developed By:
-- Mrs. M.K. Nivothini
-- Ms. R. Keerthana
-### Key Developers:
-- [Akash 😉](https://github.com/Akash-2176)
-- [Abirami D](https://github.com/Abiingit)
-
-## Contact
-- **Email:** abiramimani2004@gmail.com
-- **GitHub:** [ABIRAMI D](https://github.com/Abiingit)
-- **LinkedIn:** [Abirami Deivasigamani](http://www.linkedin.com/in/abirami-deivasigamani2004)
-
----
-Thank you for using the Mixture Calculation Web App!
-
+Outcome:
+This project helped me combine web development skills with practical civil engineering knowledge, creating a tool that can be used for real-world construction calculations.
